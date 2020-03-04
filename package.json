@@ -3,17 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "12.9.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Peter J. Beard",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "prisma2": "^2.0.0-preview023"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "@prisma/client": "2.0.0-preview022",
+    "apollo-server": "^2.10.1",
     "esm": "^3.2.25",
-    "express": "^4.17.1"
+    "graphql": "14.6.0",
+    "graphql-tools": "4.0.7"
   }
 }
