@@ -1,0 +1,19 @@
+datasource db {
+    provider = "postgresql"
+    url      = "postgresql://postgres:docker@192.168.99.100:5432/tnt?schema=public"
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model Weapon {
+    id             String   @default(cuid()) @id
+    createdAt      DateTime @default(now())
+    updatedAt      DateTime @updatedAt
+    name           String
+    description    String
+    defaultCredits String
+    courseCode     String
+    termsOffered   String
+}

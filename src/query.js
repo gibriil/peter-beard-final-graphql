@@ -6,8 +6,8 @@ import {
 
 export const Query = queryType({
     definition(t) {
-        t.field('Course', {
-            type: 'Course',
+        t.field('Weapon', {
+            type: 'Weapon',
             nullable: true,
             args: {
                 id: idArg()
@@ -15,7 +15,7 @@ export const Query = queryType({
             resolve: (parent, {
                 id
             }, ctx) => {
-                return ctx.prisma.course.findOne({
+                return ctx.prisma.weapon.findOne({
                     where: {
                         id,
                     },
@@ -23,8 +23,8 @@ export const Query = queryType({
             }
         })
 
-        t.list.field('Courses', {
-            type: 'Course',
+        t.list.field('Weapons', {
+            type: 'Weapon',
             args: {
                 searchString: stringArg({
                     nullable: true
@@ -33,7 +33,7 @@ export const Query = queryType({
             resolve: (parent, {
                 searchString
             }, ctx) => {
-                return ctx.prisma.course.findMany({
+                return ctx.prisma.weapon.findMany({
                     where: {
                         OR: [{
                                 name: {

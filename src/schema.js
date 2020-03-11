@@ -9,7 +9,7 @@ import {
 } from './query.js';
 import {
     Models
-} from './nexusModels.js';
+} from './nexusModals.js';
 
 export const schema = makeSchema({
     types: [Query, ...Models],
@@ -25,7 +25,7 @@ export const schema = makeSchema({
                 alias: 'prisma',
             },
             {
-                source: require.resolve('./context'),
+                source: require.resolve('./prismaContext'),
                 alias: 'Context'
             }
         ]

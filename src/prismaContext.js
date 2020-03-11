@@ -10,6 +10,6 @@ function createContext() {
     }
 }
 
-module.exports = {
+export {
     createContext
 }
