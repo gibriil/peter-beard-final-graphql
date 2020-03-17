@@ -7,12 +7,12 @@
     "node": "12.9.1"
   },
   "scripts": {
-    "nuke": "docker stop tnt-docker && docker rm tnt-docker && docker volume rm tntdata && rm -rf prisma/migrations",
-    "launchDocker": "docker run --name tnt-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v tntdata:/var/lib/postgresql/data postgres:latest",
-    "createDB": "npx prisma2 migrate save --name 'init' --experimental && npx prisma2 migrate up --experimental",
+    "nuke": "docker stop tnt-docker && docker rm tnt-docker && docker volume rm tnt && rm -rf prisma/migrations",
+    "launchDocker": "docker run --name tnt-docker -e POSTGRES_PASSWORD=docker -e POSTGRES_DATABSE=tnt -d -p 5432:5432 -v tnt:/var/lib/postgresql/data postgres:latest",
+    "createDB": "docker volume create --name tnt -d local",
+    "migrateDB": "npx prisma2 migrate save --name 'init' --experimental && npx prisma2 migrate up --experimental",
     "generate": "npx prisma2 generate",
     "postinstall": "npm -s run generate",
-    "seed": "node -r esm prisma/seed",
     "dev": "npx prisma2 studio --experimental",
     "start": "node -r esm index.js"
   },
