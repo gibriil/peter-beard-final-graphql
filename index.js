@@ -15,5 +15,6 @@ new ApolloServer({
     context: createContext()
 }).listen({
     port: PORT
-}
-);
+}, () => {
+    console.log(`GraphQL Playground running on http://localhost:${PORT}`);
+});
