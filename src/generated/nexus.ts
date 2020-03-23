@@ -55,6 +55,10 @@ export interface NexusGenFieldTypes {
     weight: number; // Int!
   }
   Query: { // field return type
+    AllArmour: NexusGenRootTypes['Armour'][]; // [Armour!]!
+    Armour: NexusGenRootTypes['Armour'] | null; // Armour
+    Spell: NexusGenRootTypes['Spells'] | null; // Spells
+    Spells: NexusGenRootTypes['Spells'][]; // [Spells!]!
     Weapon: NexusGenRootTypes['Weapon'] | null; // Weapon
     Weapons: NexusGenRootTypes['Weapon'][]; // [Weapon!]!
   }
@@ -90,6 +94,18 @@ export interface NexusGenFieldTypes {
 
 export interface NexusGenArgTypes {
   Query: {
+    AllArmour: { // args
+      searchString?: string | null; // String
+    }
+    Armour: { // args
+      id?: string | null; // ID
+    }
+    Spell: { // args
+      id?: string | null; // ID
+    }
+    Spells: { // args
+      searchString?: string | null; // String
+    }
     Weapon: { // args
       id?: string | null; // ID
     }

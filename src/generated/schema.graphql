@@ -19,6 +19,10 @@ type Armour {
 scalar DateTime
 
 type Query {
+  AllArmour(searchString: String): [Armour!]!
+  Armour(id: ID): Armour
+  Spell(id: ID): Spells
+  Spells(searchString: String): [Spells!]!
   Weapon(id: ID): Weapon
   Weapons(searchString: String): [Weapon!]!
 }
