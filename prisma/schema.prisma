@@ -1,19 +1,52 @@
 datasource db {
-    provider = "postgresql"
-    url      = "postgresql://postgres:docker@localhost:5432/tnt?schema=public"
+  provider = "postgresql"
+  url      = "postgresql://postgres:docker@localhost:5432/tnt?schema=public"
 }
 
 generator client {
-    provider = "prisma-client-js"
+  provider = "prisma-client-js"
 }
 
 model Weapon {
-    id             String   @default(cuid()) @id
-    createdAt      DateTime @default(now())
-    updatedAt      DateTime @updatedAt
-    name           String
-    description    String
-    defaultCredits String
-    courseCode     String
-    termsOffered   String
+  id          String   @default(cuid()) @id
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  name        String
+  category    String
+  type        String
+  dice        Int
+  adds        Int?
+  strengthReq Int
+  dexReq      Int
+  cost        Int
+  weight      Int
+  range       String?
+  length      String?
+  extraInfo   String?
+}
+
+model Armour {
+  id          String   @default(cuid()) @id
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  name        String
+  category    String
+  type        String?
+  hits        Int
+  strengthReq Int
+  cost        Int
+  weight      Int
+  extraInfo   String?
+}
+
+model Spells {
+  id          String   @default(cuid()) @id
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  name        String
+  level       Int
+  description String
+  cost        String
+  range       String?
+  symbol      String?
 }

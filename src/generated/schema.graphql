@@ -2,6 +2,20 @@
 ### Do not make changes to this file directly
 
 
+type Armour {
+  category: String!
+  cost: Int!
+  createdAt: DateTime!
+  extraInfo: String
+  hits: Int!
+  id: String!
+  name: String!
+  strengthReq: Int!
+  type: String
+  updatedAt: DateTime!
+  weight: Int!
+}
+
 scalar DateTime
 
 type Query {
@@ -9,13 +23,32 @@ type Query {
   Weapons(searchString: String): [Weapon!]!
 }
 
-type Weapon {
-  courseCode: String!
+type Spells {
+  cost: String!
   createdAt: DateTime!
-  defaultCredits: String!
   description: String!
   id: String!
+  level: Int!
   name: String!
-  termsOffered: String!
+  range: String
+  symbol: String
   updatedAt: DateTime!
+}
+
+type Weapon {
+  adds: Int
+  category: String!
+  cost: Int!
+  createdAt: DateTime!
+  dexReq: Int!
+  dice: Int!
+  extraInfo: String
+  id: String!
+  length: String
+  name: String!
+  range: String
+  strengthReq: Int!
+  type: String!
+  updatedAt: DateTime!
+  weight: Int!
 }

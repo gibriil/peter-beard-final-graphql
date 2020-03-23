@@ -25,7 +25,9 @@ export interface NexusGenEnums {
 }
 
 export interface NexusGenRootTypes {
+  Armour: prisma.Armour;
   Query: {};
+  Spells: prisma.Spells;
   Weapon: prisma.Weapon;
   String: string;
   Int: number;
@@ -39,19 +41,50 @@ export interface NexusGenAllTypes extends NexusGenRootTypes {
 }
 
 export interface NexusGenFieldTypes {
+  Armour: { // field return type
+    category: string; // String!
+    cost: number; // Int!
+    createdAt: any; // DateTime!
+    extraInfo: string | null; // String
+    hits: number; // Int!
+    id: string; // String!
+    name: string; // String!
+    strengthReq: number; // Int!
+    type: string | null; // String
+    updatedAt: any; // DateTime!
+    weight: number; // Int!
+  }
   Query: { // field return type
     Weapon: NexusGenRootTypes['Weapon'] | null; // Weapon
     Weapons: NexusGenRootTypes['Weapon'][]; // [Weapon!]!
   }
-  Weapon: { // field return type
-    courseCode: string; // String!
+  Spells: { // field return type
+    cost: string; // String!
     createdAt: any; // DateTime!
-    defaultCredits: string; // String!
     description: string; // String!
     id: string; // String!
+    level: number; // Int!
     name: string; // String!
-    termsOffered: string; // String!
+    range: string | null; // String
+    symbol: string | null; // String
     updatedAt: any; // DateTime!
+  }
+  Weapon: { // field return type
+    adds: number | null; // Int
+    category: string; // String!
+    cost: number; // Int!
+    createdAt: any; // DateTime!
+    dexReq: number; // Int!
+    dice: number; // Int!
+    extraInfo: string | null; // String
+    id: string; // String!
+    length: string | null; // String
+    name: string; // String!
+    range: string | null; // String
+    strengthReq: number; // Int!
+    type: string; // String!
+    updatedAt: any; // DateTime!
+    weight: number; // Int!
   }
 }
 
@@ -71,7 +104,7 @@ export interface NexusGenAbstractResolveReturnTypes {
 
 export interface NexusGenInheritedFields {}
 
-export type NexusGenObjectNames = "Query" | "Weapon";
+export type NexusGenObjectNames = "Armour" | "Query" | "Spells" | "Weapon";
 
 export type NexusGenInputNames = never;
 
