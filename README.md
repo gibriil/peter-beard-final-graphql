@@ -1,4 +1,4 @@
-# Tunnels & Trolls Character Shop Inventory -- Weapons, Armour, and Spells
+# Tunnels & Trolls Shop Inventory -- Weapons, Armour, and Spells
 ## GraphQL CRUD Apollo Server for DGM 4790
 
 For this project, I had to build GraphQL using Node, Prisma, and Apollo Server.  The API needed to allow users to Create, Read, Update, and Delete (CRUD) the items.  The server needed implement the following items:
