@@ -13,6 +13,7 @@
     "migrateDB": "npx prisma2 migrate save --name 'init' --experimental && npx prisma2 migrate up --experimental",
     "generate": "npx prisma2 generate",
     "postinstall": "npm -s run generate",
+    "seed": "node -r esm prisma/seed",
     "dev": "npx prisma2 studio --experimental",
     "start": "node -r esm index.js"
   },
