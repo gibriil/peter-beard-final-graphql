@@ -7,7 +7,9 @@ import {
 import {
     Query
 } from './query.js';
-import Mutation from './mutation.js';
+import {
+    Mutation
+} from './mutation.js';
 import {
     Models
 } from './nexusModals.js';

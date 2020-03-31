@@ -16,7 +16,17 @@ type Armour {
   weight: Int!
 }
 
+input ArmourWhereUniqueInput {
+  id: String
+}
+
 scalar DateTime
+
+type Mutation {
+  deleteOneArmour(where: ArmourWhereUniqueInput!): Armour
+  deleteOneSpells(where: SpellsWhereUniqueInput!): Spells
+  deleteOneWeapon(where: WeaponWhereUniqueInput!): Weapon
+}
 
 type Query {
   AllArmour(searchString: String): [Armour!]!
@@ -39,6 +49,10 @@ type Spells {
   updatedAt: DateTime!
 }
 
+input SpellsWhereUniqueInput {
+  id: String
+}
+
 type Weapon {
   adds: Int
   category: String!
@@ -55,4 +69,8 @@ type Weapon {
   type: String!
   updatedAt: DateTime!
   weight: Int!
+}
+
+input WeaponWhereUniqueInput {
+  id: String
 }

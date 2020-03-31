@@ -19,6 +19,15 @@ declare global {
 }
 
 export interface NexusGenInputs {
+  ArmourWhereUniqueInput: { // input type
+    id?: string | null; // String
+  }
+  SpellsWhereUniqueInput: { // input type
+    id?: string | null; // String
+  }
+  WeaponWhereUniqueInput: { // input type
+    id?: string | null; // String
+  }
 }
 
 export interface NexusGenEnums {
@@ -26,6 +35,7 @@ export interface NexusGenEnums {
 
 export interface NexusGenRootTypes {
   Armour: prisma.Armour;
+  Mutation: {};
   Query: {};
   Spells: prisma.Spells;
   Weapon: prisma.Weapon;
@@ -38,6 +48,9 @@ export interface NexusGenRootTypes {
 }
 
 export interface NexusGenAllTypes extends NexusGenRootTypes {
+  ArmourWhereUniqueInput: NexusGenInputs['ArmourWhereUniqueInput'];
+  SpellsWhereUniqueInput: NexusGenInputs['SpellsWhereUniqueInput'];
+  WeaponWhereUniqueInput: NexusGenInputs['WeaponWhereUniqueInput'];
 }
 
 export interface NexusGenFieldTypes {
@@ -53,6 +66,11 @@ export interface NexusGenFieldTypes {
     type: string | null; // String
     updatedAt: any; // DateTime!
     weight: number; // Int!
+  }
+  Mutation: { // field return type
+    deleteOneArmour: NexusGenRootTypes['Armour'] | null; // Armour
+    deleteOneSpells: NexusGenRootTypes['Spells'] | null; // Spells
+    deleteOneWeapon: NexusGenRootTypes['Weapon'] | null; // Weapon
   }
   Query: { // field return type
     AllArmour: NexusGenRootTypes['Armour'][]; // [Armour!]!
@@ -93,6 +111,17 @@ export interface NexusGenFieldTypes {
 }
 
 export interface NexusGenArgTypes {
+  Mutation: {
+    deleteOneArmour: { // args
+      where: NexusGenInputs['ArmourWhereUniqueInput']; // ArmourWhereUniqueInput!
+    }
+    deleteOneSpells: { // args
+      where: NexusGenInputs['SpellsWhereUniqueInput']; // SpellsWhereUniqueInput!
+    }
+    deleteOneWeapon: { // args
+      where: NexusGenInputs['WeaponWhereUniqueInput']; // WeaponWhereUniqueInput!
+    }
+  }
   Query: {
     AllArmour: { // args
       searchString?: string | null; // String
@@ -120,9 +149,9 @@ export interface NexusGenAbstractResolveReturnTypes {
 
 export interface NexusGenInheritedFields {}
 
-export type NexusGenObjectNames = "Armour" | "Query" | "Spells" | "Weapon";
+export type NexusGenObjectNames = "Armour" | "Mutation" | "Query" | "Spells" | "Weapon";
 
-export type NexusGenInputNames = never;
+export type NexusGenInputNames = "ArmourWhereUniqueInput" | "SpellsWhereUniqueInput" | "WeaponWhereUniqueInput";
 
 export type NexusGenEnumNames = never;
 
