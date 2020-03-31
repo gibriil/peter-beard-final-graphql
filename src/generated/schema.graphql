@@ -6,14 +6,42 @@ type Armour {
   category: String!
   cost: Int!
   createdAt: DateTime!
-  extraInfo: String
+  extraInfo: String!
   hits: Int!
   id: String!
   name: String!
   strengthReq: Int!
-  type: String
+  type: String!
   updatedAt: DateTime!
   weight: Int!
+}
+
+input ArmourCreateInput {
+  category: String!
+  cost: Int!
+  createdAt: DateTime
+  extraInfo: String!
+  hits: Int!
+  id: String
+  name: String!
+  strengthReq: Int!
+  type: String!
+  updatedAt: DateTime
+  weight: Int!
+}
+
+input ArmourUpdateInput {
+  category: String
+  cost: Int
+  createdAt: DateTime
+  extraInfo: String
+  hits: Int
+  id: String
+  name: String
+  strengthReq: Int
+  type: String
+  updatedAt: DateTime
+  weight: Int
 }
 
 input ArmourWhereUniqueInput {
@@ -23,52 +51,118 @@ input ArmourWhereUniqueInput {
 scalar DateTime
 
 type Mutation {
+  createOneArmour(data: ArmourCreateInput!): Armour!
+  createOneSpell(data: SpellCreateInput!): Spell!
+  createOneWeapon(data: WeaponCreateInput!): Weapon!
   deleteOneArmour(where: ArmourWhereUniqueInput!): Armour
-  deleteOneSpells(where: SpellsWhereUniqueInput!): Spells
+  deleteOneSpell(where: SpellWhereUniqueInput!): Spell
   deleteOneWeapon(where: WeaponWhereUniqueInput!): Weapon
+  updateOneArmour(data: ArmourUpdateInput!, where: ArmourWhereUniqueInput!): Armour
+  updateOneSpell(data: SpellUpdateInput!, where: SpellWhereUniqueInput!): Spell
+  updateOneWeapon(data: WeaponUpdateInput!, where: WeaponWhereUniqueInput!): Weapon
 }
 
 type Query {
   AllArmour(searchString: String): [Armour!]!
   Armour(id: ID): Armour
-  Spell(id: ID): Spells
-  Spells(searchString: String): [Spells!]!
+  Spell(id: ID): Spell
+  Spells(searchString: String): [Spell!]!
   Weapon(id: ID): Weapon
   Weapons(searchString: String): [Weapon!]!
 }
 
-type Spells {
+type Spell {
   cost: String!
   createdAt: DateTime!
   description: String!
   id: String!
   level: Int!
   name: String!
-  range: String
-  symbol: String
+  range: String!
+  symbol: String!
   updatedAt: DateTime!
 }
 
-input SpellsWhereUniqueInput {
+input SpellCreateInput {
+  cost: String!
+  createdAt: DateTime
+  description: String!
+  id: String
+  level: Int!
+  name: String!
+  range: String!
+  symbol: String!
+  updatedAt: DateTime
+}
+
+input SpellUpdateInput {
+  cost: String
+  createdAt: DateTime
+  description: String
+  id: String
+  level: Int
+  name: String
+  range: String
+  symbol: String
+  updatedAt: DateTime
+}
+
+input SpellWhereUniqueInput {
   id: String
 }
 
 type Weapon {
-  adds: Int
+  adds: Int!
   category: String!
   cost: Int!
   createdAt: DateTime!
   dexReq: Int!
   dice: Int!
-  extraInfo: String
+  extraInfo: String!
   id: String!
-  length: String
+  length: String!
   name: String!
-  range: String
+  range: String!
   strengthReq: Int!
   type: String!
   updatedAt: DateTime!
   weight: Int!
+}
+
+input WeaponCreateInput {
+  adds: Int!
+  category: String!
+  cost: Int!
+  createdAt: DateTime
+  dexReq: Int!
+  dice: Int!
+  extraInfo: String!
+  id: String
+  length: String!
+  name: String!
+  range: String!
+  strengthReq: Int!
+  type: String!
+  updatedAt: DateTime
+  weight: Int!
+}
+
+input WeaponUpdateInput {
+  adds: Int
+  category: String
+  cost: Int
+  createdAt: DateTime
+  dexReq: Int
+  dice: Int
+  extraInfo: String
+  id: String
+  length: String
+  name: String
+  range: String
+  strengthReq: Int
+  type: String
+  updatedAt: DateTime
+  weight: Int
 }
 
 input WeaponWhereUniqueInput {

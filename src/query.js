@@ -41,7 +41,7 @@ export const Query = queryType({
         })
 
         t.field('Spell', {
-            type: 'Spells',
+            type: 'Spell',
             nullable: true,
             args: {
                 id: idArg()
@@ -49,7 +49,7 @@ export const Query = queryType({
             resolve: (parent, {
                 id
             }, ctx) => {
-                return ctx.prisma.spells.findOne({
+                return ctx.prisma.spell.findOne({
                     where: {
                         id,
                     },
@@ -113,7 +113,7 @@ export const Query = queryType({
         })
 
         t.list.field('Spells', {
-            type: 'Spells',
+            type: 'Spell',
             args: {
                 searchString: stringArg({
                     nullable: true
@@ -122,7 +122,7 @@ export const Query = queryType({
             resolve: (parent, {
                 searchString
             }, ctx) => {
-                return ctx.prisma.spells.findMany({
+                return ctx.prisma.spell.findMany({
                     where: {
                         OR: [{
                             name: {

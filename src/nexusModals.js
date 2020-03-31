@@ -40,8 +40,8 @@ const Armour = objectType({
     }
 })
 
-const Spells = objectType({
-    name: 'Spells',
+const Spell = objectType({
+    name: 'Spell',
     definition(t) {
         t.model.id()
         t.model.createdAt()
@@ -58,5 +58,5 @@ const Spells = objectType({
 export const Models = [
     Weapon,
     Armour,
-    Spells
+    Spell
 ]

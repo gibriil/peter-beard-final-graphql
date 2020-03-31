@@ -15,14 +15,14 @@ model Weapon {
   category    String
   type        String
   dice        Int
-  adds        Int?
+  adds        Int
   strengthReq Int
   dexReq      Int
   cost        Int
   weight      Int
-  range       String?
-  length      String?
-  extraInfo   String?
+  range       String
+  length      String
+  extraInfo   String
 }
 
 model Armour {
@@ -31,15 +31,15 @@ model Armour {
   updatedAt   DateTime @updatedAt
   name        String
   category    String
-  type        String?
+  type        String
   hits        Int
   strengthReq Int
   cost        Int
   weight      Int
-  extraInfo   String?
+  extraInfo   String
 }
 
-model Spells {
+model Spell {
   id          String   @default(cuid()) @id
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
@@ -47,6 +47,6 @@ model Spells {
   level       Int
   description String
   cost        String
-  range       String?
-  symbol      String?
+  range       String
+  symbol      String
 }

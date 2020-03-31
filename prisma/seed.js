@@ -71,7 +71,7 @@ async function main() {
                 .catch(err => console.log(`Error trying to create weapon: ${err} armour ${armour}`))
         }
         for (let spell of AllSpells) {
-            await prismaClient.spells.create(spell)
+            await prismaClient.spell.create(spell)
                 .catch(err => console.log(`Error trying to create weapon: ${err} spell ${spell}`))
         }
     } catch (err) {
