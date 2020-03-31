@@ -7,12 +7,13 @@ import {
 import {
     Query
 } from './query.js';
+import Mutation from './mutation.js';
 import {
     Models
 } from './nexusModals.js';
 
 export const schema = makeSchema({
-    types: [Query, ...Models],
+    types: [Query, Mutation, ...Models],
     plugins: [nexusPrismaPlugin()],
     outputs: {
         schema: __dirname + '/generated/schema.graphql',
