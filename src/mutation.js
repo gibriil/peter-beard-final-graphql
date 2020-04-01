@@ -17,7 +17,7 @@ export const Mutation = mutationType({
         t.crud.updateOneArmour()
         t.crud.deleteOneArmour()
 
-        t.crud.createOneSpell();
+        t.crud.createOneSpell()
         t.crud.updateOneSpell()
         t.crud.deleteOneSpell()
     }
