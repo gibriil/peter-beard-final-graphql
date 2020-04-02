@@ -87,29 +87,53 @@ npm run seed
 
 ### 2. Start the GraphQL server
 
-Launch your GraphQL server with this command:
+Launch the GraphQL server with this command:
 
 ```
 npm start
 ```
 
-Navigate to [http://localhost:4000](http://localhost:4000) in your browser to explore the API of your GraphQL server in a [GraphQL Playground](https://github.com/prisma/graphql-playground).
+Navigate to [http://localhost:4000](http://localhost:4000) in your browser to explore the API of this GraphQL server in a [GraphQL Playground](https://github.com/prisma/graphql-playground).
 
 ### 3. Using the GraphQL API
 
-The schema that specifies the API operations of your GraphQL server is defined in [`./schema.graphql`](./schema.graphql). Below are a number of operations that you can send to the API using the GraphQL Playground.
+The schema that specifies the API operations of the GraphQL server is defined in [`schema.graphql`](https://github.com/gibriil/peter-beard-final-graphql/blob/master/src/generated/schema.graphql). Below are a number of operations that you can send to the API using the GraphQL Playground.
 
 Feel free to adjust any operation by adding or removing fields. The GraphQL Playground helps you with its auto-completion and query validation features.
 
-#### Retrieve all courses with their name, course code and description
+#### Retrieve all Weapons with their name, cost, and weight
 
 ```graphql
-query allCourses {
-  Courses {
-    id
-    name
-    courseCode
-    description
+query allWeapons {
+  Weapons {
+    id,
+    name,
+    cost,
+    weight
+  }
+}
+```
+#### Retrieve all Armour with their name, cost, and weight
+
+```graphql
+query allArmour {
+  AllArmour {
+    id,
+    name,
+    cost,
+    weight
+  }
+}
+```
+
+#### Retrieve all Spells with their name and level
+
+```graphql
+query allSpells {
+  Spells {
+    id,
+    name,
+    level
   }
 }
 ```
@@ -162,33 +186,7 @@ mutation deleteOneCourse {
 }
 ```
 
-> **Note**: You need to replace the `__ITEM_ID__` placeholder with an actual `id` from a `Course` item. You can find one e.g. using the `allCourses` query.
+> **Note**: You need to replace the `__ITEM_ID__` placeholder with an actual `id` from an item. You can find one e.g. using the query to list all of the given items.
 
-#### Search for courses with a specific string found in the name or description
-
-```graphql
-query filterCourses {
-  Courses(searchString: "DGM") {
-    id
-    name
-    courseCode
-    description
-  }
-}
-```
-
-#### Retrieve a single course by its id
-
-```graphql
-query oneCourse {
-  Course(id: __ITEM_ID__) {
-    name
-    description
-    id
-  }
-}
-```
-
-> **Note**: You need to replace the `__ITEM_ID__` placeholder with an actual `id` from a `Course` item. You can find one e.g. using the `allCourses` query.
 
 </Details>
