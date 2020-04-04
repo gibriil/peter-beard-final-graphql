@@ -168,13 +168,22 @@ mutation createOneWeapon {
 }
 ```
 
+#### Read a specific Weapon by id
+
+```graphql
+  query getWeapon {
+    Weapon(where: {id:"__ITEM_ID__"}) {
+      id,
+      name
+    }
+  }
+```
+
 #### Update a Weapon
 
 ```graphql
 mutation updateOneWeapon {
   updateOneWeapon(data: {
-
-  }, where: {
     name:        ,//String
     category:    ,//String
     type:        ,//String
@@ -187,7 +196,9 @@ mutation updateOneWeapon {
     range:       ,//String
     length:      ,//String
     extraInfo:   //String
-      }) {
+    }, where: {
+      id: "__ITEM_ID__"
+    }) {
     id,
     name,
     dice,
@@ -231,6 +242,17 @@ mutation createOneArmour {
     name
   }
 }
+```
+
+#### Read a specific Armour by id
+
+```graphql
+  query getArmour {
+    Armour(where: {id:"__ITEM_ID__"}) {
+      id,
+      name
+    }
+  }
 ```
 
 #### Update an Armour
@@ -286,6 +308,17 @@ mutation createOneSpell {
     name
   }
 }
+```
+
+#### Read a specific Spell by id
+
+```graphql
+  query getSpell {
+    Spell(where: {id:"__ITEM_ID__"}) {
+      id,
+      name
+    }
+  }
 ```
 
 #### Update a Spell
