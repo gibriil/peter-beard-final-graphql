@@ -140,53 +140,82 @@ query allSpells {
 
 <Details><Summary><strong>See more API operations</strong></Summary>
 
-#### Create a new course
+#### Create a new Weapon
 
 ```graphql
-mutation createCourse {
-  createCourse(name: "My course",
-    description: "My course description",
-  defaultCredits: "3",
-  courseCode: "DGM 9000",
-  termsOffered: "Fall, Spring") {
-    id
-    createdAt
-    name
-  }
+mutation createOneWeapon {
+  
 }
 ```
 
-#### Update a course
+#### Update a Weapon
 
 ```graphql
-mutation updateCourse {
-  updateCourse(id: __ITEM_ID__,
-    name: "Updated course",
-    description: "My updated course description",
-  defaultCredits: "3",
-  courseCode: "DGM 9000",
-  termsOffered: "Fall, Spring") {
-    id
-    createdAt
-    name
-  }
+mutation updateOneWeapon {
+  
 }
 ```
 
-#### Delete a specific course by id
+#### Delete a specific Weapon by id
 
 ```graphql
-mutation deleteOneCourse {
-  deleteOneCourse(where: {
-    id: __ITEM_ID__
-  }) {
-    id
-    name
-  }
+mutation deleteOneWeapon {
+  
 }
 ```
 
-> **Note**: You need to replace the `__ITEM_ID__` placeholder with an actual `id` from an item. You can find one e.g. using the query to list all of the given items.
+> **Note**: You need to replace the `__ITEM_ID__` placeholder with an actual `id` from a Weapon. You can find one e.g. using the `allWeapons` query to list all of the given Weapons.
 
+#### Create a new Armour
+
+```graphql
+mutation createOneArmour {
+  
+}
+```
+
+#### Update an Armour
+
+```graphql
+mutation updateOneArmour {
+  
+}
+```
+
+#### Delete a specific Armour by id
+
+```graphql
+mutation deleteOneArmour {
+  
+}
+```
+
+> **Note**: You need to replace the `__ITEM_ID__` placeholder with an actual `id` from a Armour. You can find one e.g. using the `allArmour` query to list all of the given Armours.
+
+#### Create a new Spell
+
+```graphql
+mutation createOneSpell {
+  
+}
+```
+
+#### Update a Spell
+
+```graphql
+mutation updateOneSpell {
+  
+}
+```
+
+#### Delete a specific Spell by id
+
+```graphql
+mutation deleteOneSpell {
+  
+}
+```
+
+> **Note**: You need to replace the `__ITEM_ID__` placeholder with an actual `id` from a Spell. You can find one e.g. using the `allSpells` query to list all of the given Spells.
 
 </Details>
