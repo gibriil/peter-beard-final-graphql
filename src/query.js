@@ -6,56 +6,10 @@ import {
 
 export const Query = queryType({
     definition(t) {
-        t.field('Weapon', {
-            type: 'Weapon',
-            nullable: true,
-            args: {
-                id: idArg()
-            },
-            resolve: (parent, {
-                id
-            }, ctx) => {
-                return ctx.prisma.weapon.findOne({
-                    where: {
-                        id,
-                    },
-                })
-            }
-        })
 
-        t.field('Armour', {
-            type: 'Armour',
-            nullable: true,
-            args: {
-                id: idArg()
-            },
-            resolve: (parent, {
-                id
-            }, ctx) => {
-                return ctx.prisma.armour.findOne({
-                    where: {
-                        id,
-                    },
-                })
-            }
-        })
-
-        t.field('Spell', {
-            type: 'Spell',
-            nullable: true,
-            args: {
-                id: idArg()
-            },
-            resolve: (parent, {
-                id
-            }, ctx) => {
-                return ctx.prisma.spell.findOne({
-                    where: {
-                        id,
-                    },
-                })
-            }
-        })
+        t.crud.weapon()
+        t.crud.armour()
+        t.crud.spell()
 
         t.list.field('Weapons', {
             type: 'Weapon',

@@ -64,10 +64,10 @@ type Mutation {
 
 type Query {
   AllArmour(searchString: String): [Armour!]!
-  Armour(id: ID): Armour
-  Spell(id: ID): Spell
+  armour(where: ArmourWhereUniqueInput!): Armour
+  spell(where: SpellWhereUniqueInput!): Spell
   Spells(searchString: String): [Spell!]!
-  Weapon(id: ID): Weapon
+  weapon(where: WeaponWhereUniqueInput!): Weapon
   Weapons(searchString: String): [Weapon!]!
 }
 

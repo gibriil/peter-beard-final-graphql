@@ -168,10 +168,10 @@ export interface NexusGenFieldTypes {
   }
   Query: { // field return type
     AllArmour: NexusGenRootTypes['Armour'][]; // [Armour!]!
-    Armour: NexusGenRootTypes['Armour'] | null; // Armour
-    Spell: NexusGenRootTypes['Spell'] | null; // Spell
+    armour: NexusGenRootTypes['Armour'] | null; // Armour
+    spell: NexusGenRootTypes['Spell'] | null; // Spell
     Spells: NexusGenRootTypes['Spell'][]; // [Spell!]!
-    Weapon: NexusGenRootTypes['Weapon'] | null; // Weapon
+    weapon: NexusGenRootTypes['Weapon'] | null; // Weapon
     Weapons: NexusGenRootTypes['Weapon'][]; // [Weapon!]!
   }
   Spell: { // field return type
@@ -241,17 +241,17 @@ export interface NexusGenArgTypes {
     AllArmour: { // args
       searchString?: string | null; // String
     }
-    Armour: { // args
-      id?: string | null; // ID
+    armour: { // args
+      where: NexusGenInputs['ArmourWhereUniqueInput']; // ArmourWhereUniqueInput!
     }
-    Spell: { // args
-      id?: string | null; // ID
+    spell: { // args
+      where: NexusGenInputs['SpellWhereUniqueInput']; // SpellWhereUniqueInput!
     }
     Spells: { // args
       searchString?: string | null; // String
     }
-    Weapon: { // args
-      id?: string | null; // ID
+    weapon: { // args
+      where: NexusGenInputs['WeaponWhereUniqueInput']; // WeaponWhereUniqueInput!
     }
     Weapons: { // args
       searchString?: string | null; // String
