@@ -144,7 +144,27 @@ query allSpells {
 
 ```graphql
 mutation createOneWeapon {
-  
+  createOneWeapon(data: {
+    name:        ,//String
+    category:    ,//String
+    type:        ,//String
+    dice:        ,//Int
+    adds:        ,//Int
+    strengthReq: ,//Int
+    dexReq:      ,//Int
+    cost:        ,//Int
+    weight:      ,//Int
+    range:       ,//String
+    length:      ,//String
+    extraInfo:   //String
+      }) {
+    id,
+    name,
+    dice,
+    adds,
+    cost,
+    weight
+  }
 }
 ```
 
@@ -152,7 +172,29 @@ mutation createOneWeapon {
 
 ```graphql
 mutation updateOneWeapon {
-  
+  updateOneWeapon(data: {
+
+  }, where: {
+    name:        ,//String
+    category:    ,//String
+    type:        ,//String
+    dice:        ,//Int
+    adds:        ,//Int
+    strengthReq: ,//Int
+    dexReq:      ,//Int
+    cost:        ,//Int
+    weight:      ,//Int
+    range:       ,//String
+    length:      ,//String
+    extraInfo:   //String
+      }) {
+    id,
+    name,
+    dice,
+    adds,
+    cost,
+    weight
+  }
 }
 ```
 
@@ -160,7 +202,12 @@ mutation updateOneWeapon {
 
 ```graphql
 mutation deleteOneWeapon {
-  
+  deleteOneWeapon(where: {
+    id: "__ITEM_ID__"
+  }) {
+    id,
+    name
+  }
 }
 ```
 
@@ -170,7 +217,19 @@ mutation deleteOneWeapon {
 
 ```graphql
 mutation createOneArmour {
-  
+  createOneArmour(data: {
+    name:        ,//String
+    category:    ,//String
+    type:        ,//String
+    hits:        ,//Int
+    strengthReq: ,//Int
+    cost:        ,//Int
+    weight:      ,//Int
+    extraInfo:   //String
+  }) {
+    id,
+    name
+  }
 }
 ```
 
@@ -178,7 +237,21 @@ mutation createOneArmour {
 
 ```graphql
 mutation updateOneArmour {
-  
+  updateOneArmour(data: {
+    name:        ,//String
+    category:    ,//String
+    type:        ,//String
+    hits:        ,//Int
+    strengthReq: ,//Int
+    cost:        ,//Int
+    weight:      ,//Int
+    extraInfo:   //String
+  }, where: {
+    id: "__ITEM_ID__"
+  }) {
+    id,
+    name
+  }
 }
 ```
 
@@ -186,7 +259,12 @@ mutation updateOneArmour {
 
 ```graphql
 mutation deleteOneArmour {
-  
+  deleteOneArmour(where: {
+    id: "__ITEM_ID__"
+  }) {
+    id,
+    name
+  }
 }
 ```
 
@@ -196,7 +274,17 @@ mutation deleteOneArmour {
 
 ```graphql
 mutation createOneSpell {
-  
+  createOneSpell(data: {
+    name:        ,//String
+    level:       ,//Int
+    description: ,//String
+    cost:        ,//String
+    range:       ,//String
+    symbol:      //String
+  }) {
+    id,
+    name
+  }
 }
 ```
 
@@ -204,7 +292,19 @@ mutation createOneSpell {
 
 ```graphql
 mutation updateOneSpell {
-  
+  updateOneSpell(data: {
+    name:        ,//String
+    level:       ,//Int
+    description: ,//String
+    cost:        ,//String
+    range:       ,//String
+    symbol:      //String
+  }, where: {
+    id: "__ITEM_ID__"
+  }) {
+    id,
+    name
+  }
 }
 ```
 
@@ -212,7 +312,12 @@ mutation updateOneSpell {
 
 ```graphql
 mutation deleteOneSpell {
-  
+  deleteOneSpell(where: {
+    id: "__ITEM_ID__"
+  }) {
+    id,
+    name
+  }
 }
 ```
 
