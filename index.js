@@ -7,6 +7,7 @@ import {
 import {
     schema
 } from './src/schema.js';
+import * as dotenv from 'dotenv'
 
 const PORT = process.env.PORT || 4000;
 
