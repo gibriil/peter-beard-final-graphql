@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "12.9.1"
+    "node": "12.9.x"
   },
   "scripts": {
     "nuke": "docker stop tnt-docker && docker rm tnt-docker && docker volume rm tnt && rm -rf prisma/migrations",
@@ -24,6 +24,7 @@
   "dependencies": {
     "@prisma/client": "2.0.0-preview022",
     "apollo-server": "^2.10.1",
+    "dotenv": "^8.2.0",
     "esm": "^3.2.25",
     "graphql": "14.6.0",
     "nexus": "^0.12.0-rc.13",
