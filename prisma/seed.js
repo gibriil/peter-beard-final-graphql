@@ -74,6 +74,7 @@ async function main() {
             await prismaClient.spell.create(spell)
                 .catch(err => console.log(`Error trying to create weapon: ${err} spell ${spell}`))
         }
+        console.log("Database was seeded");
     } catch (err) {
         console.log(err)
     }

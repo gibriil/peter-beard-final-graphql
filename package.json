@@ -14,7 +14,8 @@
     "postinstall": "npm -s run generate",
     "seed": "node -r esm prisma/seed",
     "dev": "npx prisma2 studio --experimental",
-    "start": "node -r esm index.js"
+    "start": "node -r esm index.js",
+    "heroku-postbuild": "npm run seed"
   },
   "author": "Peter J. Beard",
   "license": "ISC",
