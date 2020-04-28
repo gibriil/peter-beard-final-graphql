@@ -1,5 +1,4 @@
 export const weapons = [{
-        "id": "ck9kh54dk000015ylenofhe33",
         "name": "†Great sword (6')",
         "category": "Swords",
         "type": "Class I: Straight Swords",
@@ -14,7 +13,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kh671i000115ylzyr1cgqy",
         "name": "†Two-handed broadsword (5')",
         "category": "Swords",
         "type": "Class I: Straight Swords",
@@ -29,7 +27,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kh7zn5000215yl6uvh53en",
         "name": "Hand-and-a-half sword (4')",
         "category": "Swords",
         "type": "Class I: Straight Swords",
@@ -44,7 +41,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kha1z3000315ylub3oijqv",
         "name": "Broadsword (3'-4')",
         "category": "Swords",
         "type": "Class I: Straight Swords",
@@ -59,7 +55,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9khd1nv000415yla9s9bbvn",
         "name": "Gladius (2.5'-3')",
         "category": "Swords",
         "type": "Class I: Straight Swords",
@@ -74,7 +69,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9khh2q6000515yl8wc5gfvq",
         "name": "Short sword (2'-2.5')",
         "category": "Swords",
         "type": "Class I: Straight Swords",
@@ -89,7 +83,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9khj6is000615ylrazoowjf",
         "name": "†Grand Shamsheer (No-datchi) (6') ",
         "category": "Swords",
         "type": "Class II: Curved Swords",
@@ -104,7 +97,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9khkzwd000715yli5pfsqkf",
         "name": "†Double-bladed broad axe",
         "category": "Hafted Weapons",
         "type": "Class I: Slicing Heads",
@@ -119,7 +111,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9khmmv7000815ylvi27typc",
         "name": "†Great axe (single blade)",
         "category": "Hafted Weapons",
         "type": "Class I: Slicing Heads",
@@ -134,7 +125,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9khnw9t000915ylpzzohfca",
         "name": "†Bullova",
         "category": "Hafted Weapons",
         "type": "Class I: Slicing Heads",
@@ -149,7 +139,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9khpu1t001015ylxnlamvfe",
         "name": "Broadaxe (single blade)",
         "category": "Hafted Weapons",
         "type": "Class I: Slicing Heads",
@@ -164,7 +153,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9khs5je001115ylhdqitazd",
         "name": "Francisca",
         "category": "Hafted Weapons",
         "type": "Class I: Slicing Heads",
@@ -179,7 +167,6 @@ export const weapons = [{
         "extraInfo": "(can be thrown -- if so, DEX req. = 12, range = 25 yards)"
     },
     {
-        "id": "ck9khu159001215ylsfsdwlw9",
         "name": "Taper axe",
         "category": "Hafted Weapons",
         "type": "Class I: Slicing Heads",
@@ -194,7 +181,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9khvt1e001315ylm78vx3p3",
         "name": "†Bec de Corbin",
         "category": "Hafted Weapons",
         "type": "Class II: Stabbing Heads",
@@ -209,7 +195,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9khx79w001415ylq5eojqw5",
         "name": "Poleaxe",
         "category": "Pole Weapons",
         "type": "",
@@ -224,7 +209,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9ki0pne001515yl5skkvcz5",
         "name": "Chauves souris",
         "category": "Pole Weapons",
         "type": "",
@@ -239,7 +223,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9ki375g001615ylsgqxsm9v",
         "name": "Ranseur (runka)",
         "category": "Pole Weapons",
         "type": "",
@@ -254,7 +237,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9ki50rg001715yl24acuw36",
         "name": "Halbard",
         "category": "Pole Weapons",
         "type": "",
@@ -269,7 +251,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9ki93tk001815ylwak1pd4g",
         "name": "Pike",
         "category": "Pole Weapons",
         "type": "",
@@ -284,7 +265,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kiamjp001915ylvymdizei",
         "name": "Demi-lune (halfmoon)",
         "category": "Pole Weapons",
         "type": "",
@@ -299,7 +279,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kimzx7002015yln2ef9umi",
         "name": "Voulge",
         "category": "Pole Weapons",
         "type": "",
@@ -314,7 +293,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kin02f002115ylfob25n0z",
         "name": "Voulge",
         "category": "Pole Weapons",
         "type": "",
@@ -329,7 +307,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kio5fi002215ylov6qsezj",
         "name": "Fauchard",
         "category": "Pole Weapons",
         "type": "",
@@ -344,7 +321,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kird90002315ylukfjmakd",
         "name": "Partizan",
         "category": "Pole Weapons",
         "type": "",
@@ -359,7 +335,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kiu3v1002415yl4n88pqgq",
         "name": "Guisarme",
         "category": "Pole Weapons",
         "type": "",
@@ -374,7 +349,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kiwpaa002515yllyu96w7g",
         "name": "Scythe (long)",
         "category": "Pole Weapons",
         "type": "",
@@ -389,7 +363,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kixej5002615ylj88zd1qz",
         "name": "Billhook",
         "category": "Pole Weapons",
         "type": "",
@@ -404,7 +377,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kiyelw002715ylzt5098rj",
         "name": "Kumade (rake)",
         "category": "Pole Weapons",
         "type": "",
@@ -419,7 +391,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kizqmt002815yld0wyyk86",
         "name": "Brandestock",
         "category": "Pole Weapons",
         "type": "",
@@ -434,7 +405,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kj0kxm002915yl5ms20f6a",
         "name": "Extended Brandestock",
         "category": "Pole Weapons",
         "type": "",
@@ -449,7 +419,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kj353f003015yl69coxdzz",
         "name": "Pilum",
         "category": "Spears",
         "type": "",
@@ -464,7 +433,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kj4a2q003115yl70duja4c",
         "name": "Trident",
         "category": "Spears",
         "type": "",
@@ -479,7 +447,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kj5dx8003215yla5tp83tn",
         "name": "Hoko",
         "category": "Spears",
         "type": "",
@@ -494,7 +461,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kj6pn8003315yly5f77w7j",
         "name": "Oxtongue (hasta)",
         "category": "Spears",
         "type": "",
@@ -509,7 +475,6 @@ export const weapons = [{
         "extraInfo": "(best used from horseback -- if so, add 2 dice to its roll)"
     },
     {
-        "id": "ck9kj8aav003415ylecpawj1t",
         "name": "†Spontoon",
         "category": "Spears",
         "type": "",
@@ -524,7 +489,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kj8yu9003515ylo3wvsfki",
         "name": "Common spear",
         "category": "Spears",
         "type": "",
@@ -539,7 +503,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kj9m1u003615yl58rionnn",
         "name": "Assegai",
         "category": "Spears",
         "type": "",
@@ -554,7 +517,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kja1ym003715ylpnz58xx1",
         "name": "Javelin",
         "category": "Spears",
         "type": "",
@@ -569,7 +531,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kjazr5003815ylpwdmx6g9",
         "name": "Sax",
         "category": "Daggers",
         "type": "",
@@ -584,7 +545,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kjd54v004115ylrifk6t5j",
         "name": "Kukri",
         "category": "Daggers",
         "type": "",
@@ -599,7 +559,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kjbj8r003915yl9uhtvs80",
         "name": "Katar",
         "category": "Daggers",
         "type": "",
@@ -614,7 +573,6 @@ export const weapons = [{
         "extraInfo": ""
     },
     {
-        "id": "ck9kjch8m004015ylnzjavxhf",
         "name": "Haladie",
         "category": "Daggers",
         "type": "",
@@ -628,7 +586,6 @@ export const weapons = [{
         "length": "",
         "extraInfo": ""
     }, {
-        "id": "ck9kjnq08004215ylo8vlbhzc",
         "name": "†Cranequin (rack & pinion on arbalest)",
         "category": "Projectile Weapons",
         "type": "Class I: Arbalests & Crossbows",
@@ -642,7 +599,6 @@ export const weapons = [{
         "length": "",
         "extraInfo": ""
     }, {
-        "id": "ck9kjp1oj004315ylnt5owhdv",
         "name": "†Arbalest (stirrup; lever drawn)",
         "category": "Projectile Weapons",
         "type": "Class I: Arbalests & Crossbows",
@@ -656,7 +612,6 @@ export const weapons = [{
         "length": "",
         "extraInfo": ""
     }, {
-        "id": "ck9kjqjjd004415yltrrbe1jl",
         "name": "†Crossbow (hand-drawn)",
         "category": "Projectile Weapons",
         "type": "Class I: Arbalests & Crossbows",
@@ -670,7 +625,6 @@ export const weapons = [{
         "length": "",
         "extraInfo": ""
     }, {
-        "id": "ck9kk0scj004515ylxqbgd0zp",
         "name": "†Light crossbow (hand-drawn)",
         "category": "Projectile Weapons",
         "type": "Class I: Arbalests & Crossbows",
@@ -684,7 +638,6 @@ export const weapons = [{
         "length": "",
         "extraInfo": ""
     }, {
-        "id": "ck9kk2i0n004615yl8xjavpsu",
         "name": "Ankus",
         "category": "Weird Weapons",
         "type": "",
@@ -698,7 +651,6 @@ export const weapons = [{
         "length": "",
         "extraInfo": ""
     }, {
-        "id": "ck9kk3fnx004715ylvod2qjjn",
         "name": "†Quarterstaff",
         "category": "Weird Weapons",
         "type": "",
