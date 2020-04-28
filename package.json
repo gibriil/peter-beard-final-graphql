@@ -7,8 +7,10 @@
     "node": "12.9.x"
   },
   "scripts": {
+    "migrateDB": "npx prisma2 migrate save --name 'init' --experimental && npx prisma2 migrate up --experimental",
     "generate": "npx prisma2 generate",
     "postinstall": "npm -s run generate",
+    "seed": "node -r esm prisma/seed",
     "start": "node -r esm index.js"
   },
   "author": "Peter J. Beard",
