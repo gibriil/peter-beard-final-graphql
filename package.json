@@ -10,10 +10,10 @@
     "nuke": "docker stop tnt-docker && docker rm tnt-docker && docker volume rm tnt && rm -rf prisma/migrations",
     "launchDocker": "docker run --name tnt-docker -e POSTGRES_PASSWORD=docker -e POSTGRES_DATABSE=tnt -d -p 5432:5432 -v tnt:/var/lib/postgresql/data postgres:latest",
     "migrateDB": "npx prisma2 migrate save --name 'init' --experimental && npx prisma2 migrate up --experimental",
-    "generate": "prisma generate",
+    "generate": "npx prisma2 generate",
     "postinstall": "npm -s run generate",
     "seed": "node -r esm prisma/seed",
-    "dev": "prisma studio --experimental",
+    "dev": "npx prisma2 studio --experimental",
     "start": "node -r esm index.js"
   },
   "author": "Peter J. Beard",
