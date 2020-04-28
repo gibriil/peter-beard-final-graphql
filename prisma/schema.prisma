@@ -15,7 +15,7 @@ model Weapon {
   category    String
   type        String
   dice        Int
-  adds        Int
+  adds        String
   strengthReq Int
   dexReq      Int
   cost        Int

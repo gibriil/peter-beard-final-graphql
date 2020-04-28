@@ -112,7 +112,7 @@ input SpellWhereUniqueInput {
 }
 
 type Weapon {
-  adds: Int!
+  adds: String!
   category: String!
   cost: Int!
   createdAt: DateTime!
@@ -130,7 +130,7 @@ type Weapon {
 }
 
 input WeaponCreateInput {
-  adds: Int!
+  adds: String!
   category: String!
   cost: Int!
   createdAt: DateTime
@@ -148,7 +148,7 @@ input WeaponCreateInput {
 }
 
 input WeaponUpdateInput {
-  adds: Int
+  adds: String
   category: String
   cost: Int
   createdAt: DateTime

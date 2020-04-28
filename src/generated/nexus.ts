@@ -74,7 +74,7 @@ export interface NexusGenInputs {
     id?: string | null; // String
   }
   WeaponCreateInput: { // input type
-    adds: number; // Int!
+    adds: string; // String!
     category: string; // String!
     cost: number; // Int!
     createdAt?: any | null; // DateTime
@@ -91,7 +91,7 @@ export interface NexusGenInputs {
     weight: number; // Int!
   }
   WeaponUpdateInput: { // input type
-    adds?: number | null; // Int
+    adds?: string | null; // String
     category?: string | null; // String
     cost?: number | null; // Int
     createdAt?: any | null; // DateTime
@@ -186,7 +186,7 @@ export interface NexusGenFieldTypes {
     updatedAt: any; // DateTime!
   }
   Weapon: { // field return type
-    adds: number; // Int!
+    adds: string; // String!
     category: string; // String!
     cost: number; // Int!
     createdAt: any; // DateTime!

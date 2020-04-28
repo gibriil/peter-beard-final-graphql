@@ -149,7 +149,7 @@ mutation createOneWeapon {
     category:    ,//String
     type:        ,//String
     dice:        ,//Int
-    adds:        ,//Int
+    adds:        ,//String
     strengthReq: ,//Int
     dexReq:      ,//Int
     cost:        ,//Int
@@ -188,7 +188,7 @@ mutation updateOneWeapon {
     category:    ,//String
     type:        ,//String
     dice:        ,//Int
-    adds:        ,//Int
+    adds:        ,//String
     strengthReq: ,//Int
     dexReq:      ,//Int
     cost:        ,//Int

@@ -1,6 +1,6 @@
 export const weapons = [{
         name: "Great sword (6')",
-        category: "swords",
+        category: "Swords",
         type: "Class I: Straight Swords",
         dice: 6,
         strengthReq: 21,
@@ -10,10 +10,10 @@ export const weapons = [{
     },
     {
         name: "Two-handed broadsword (5')",
-        category: "swords",
+        category: "Swords",
         type: "Class I: Straight Swords",
         dice: 5,
-        adds: 2,
+        adds: "2",
         strengthReq: 17,
         dexReq: 14,
         cost: 110,
@@ -37,7 +37,7 @@ export const weapons = [{
 
     {
         name: "Great sword (6')",
-        category: "swords",
+        category: "Swords",
         type: "Class I: Straight Swords",
         dice: 6,
         strengthReq: 21,
@@ -46,10 +46,10 @@ export const weapons = [{
         weight: 170
     }, {
         name: "Two-handed broadsword (5')",
-        category: "swords",
+        category: "Swords",
         type: "Class I: Straight Swords",
         dice: 5,
-        adds: 2,
+        adds: "2",
         strengthReq: 17,
         dexReq: 14,
         cost: 110,
@@ -67,7 +67,7 @@ export const weapons = [{
         extraInfo: "The prodd fires small stones."
     }, {
         name: "Great sword (6')",
-        category: "swords",
+        category: "Swords",
         type: "Class I: Straight Swords",
         dice: 6,
         strengthReq: 21,
@@ -76,10 +76,10 @@ export const weapons = [{
         weight: 170
     }, {
         name: "Two-handed broadsword (5')",
-        category: "swords",
+        category: "Swords",
         type: "Class I: Straight Swords",
         dice: 5,
-        adds: 2,
+        adds: "2",
         strengthReq: 17,
         dexReq: 14,
         cost: 110,
@@ -97,7 +97,7 @@ export const weapons = [{
         extraInfo: "The prodd fires small stones."
     }, {
         name: "Great sword (6')",
-        category: "swords",
+        category: "Swords",
         type: "Class I: Straight Swords",
         dice: 6,
         strengthReq: 21,
@@ -106,10 +106,10 @@ export const weapons = [{
         weight: 170
     }, {
         name: "Two-handed broadsword (5')",
-        category: "swords",
+        category: "Swords",
         type: "Class I: Straight Swords",
         dice: 5,
-        adds: 2,
+        adds: "2",
         strengthReq: 17,
         dexReq: 14,
         cost: 110,

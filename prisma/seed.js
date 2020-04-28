@@ -20,7 +20,7 @@ const AllWeapons = weapons.map(weapon => {
             category: weapon.category || "",
             type: weapon.type || "",
             dice: weapon.dice || 0,
-            adds: weapon.adds || 0,
+            adds: weapon.adds || "",
             strengthReq: weapon.strengthReq || 0,
             dexReq: weapon.dexReq || 0,
             cost: weapon.cost || 0,
