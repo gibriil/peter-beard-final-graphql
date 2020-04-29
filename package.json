@@ -1,32 +1,37 @@
 {
   "name": "peter-beard-final-graphql",
   "version": "1.0.0",
-  "description": "",
+  "description": "For this project, I had to build GraphQL using Node, Prisma, and Apollo Server.  The API needed to allow users to Create, Read, Update, and Delete (CRUD) the items.  The server needed to implement the following items:",
   "main": "index.js",
   "engines": {
-    "node": "12.9.1"
+    "node": "12.9.x"
   },
   "scripts": {
-    "nuke": "docker stop tnt-docker && docker rm tnt-docker && docker volume rm tnt && rm -rf prisma/migrations",
-    "launchDocker": "docker run --name tnt-docker -e POSTGRES_PASSWORD=docker -e POSTGRES_DATABSE=tnt -d -p 5432:5432 -v tnt:/var/lib/postgresql/data postgres:latest",
     "migrateDB": "npx prisma2 migrate save --name 'init' --experimental && npx prisma2 migrate up --experimental",
     "generate": "npx prisma2 generate",
     "postinstall": "npm -s run generate",
     "seed": "node -r esm prisma/seed",
-    "dev": "npx prisma2 studio --experimental",
     "start": "node -r esm index.js"
   },
   "author": "Peter J. Beard",
   "license": "ISC",
-  "devDependencies": {
-    "prisma2": "^2.0.0-preview023"
-  },
   "dependencies": {
-    "@prisma/client": "2.0.0-preview022",
+    "@prisma/cli": "^2.0.0-beta.3",
+    "@prisma/client": "^2.0.0-beta.3",
     "apollo-server": "^2.10.1",
     "esm": "^3.2.25",
     "graphql": "14.6.0",
     "nexus": "^0.12.0-rc.13",
-    "nexus-prisma": "^0.10.0"
-  }
+    "nexus-prisma": "^0.10.0",
+    "dotenv": "^8.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gibriil/peter-beard-final-graphql.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/gibriil/peter-beard-final-graphql/issues"
+  },
+  "homepage": "https://github.com/gibriil/peter-beard-final-graphql#readme"
 }
